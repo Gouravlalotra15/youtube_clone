@@ -7,21 +7,12 @@ import { Padding } from "@mui/icons-material";
 
 const Navbar = () => (
   <Stack direction="row" alignItems="center" pl={2} sx={{ position:  "sticky", background: '#121212', top: 0, justifyContent: "space-between"}}>
-    
-  <div style= {{display:"flex",alignItems: "center", gap:'20px'}}>
-    <div className="hamburger_icon">
-    <p className="first_bar"> </p>
-    <p> </p>
-    <p className="last_bar"></p>
-       </div>
-    
-    
-    
+  
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" width={45}/>
-      <p style={{color:"white",fontSize:'30px', wordSpacing:'20px'}}>YouToob</p>
+      <p style={{color:"white",fontSize:'30px', wordSpacing:'20px'}}>Youtube</p>
     </Link>
-  </div>
+ 
     <SearchBar />
   </Stack>
 );
